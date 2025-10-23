@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Loïc Rémy Trading - Landing Page
 
-## Getting Started
+Landing page professionnelle pour **Loïc Rémy Trading**, une plateforme de formation en trading avec plus de 1000 étudiants formés.
 
-First, run the development server:
+## 📋 Fonctionnalités
+
+- ✨ Design moderne et responsive
+- 🌓 Mode sombre / Mode clair avec persistance
+- 🎨 Charte graphique avec les couleurs #005CD9 (bleu) et #F41213 (rouge)
+- 📱 Optimisé pour mobile, tablette et desktop
+- ⚡ Performances optimisées avec Next.js 15
+- 🎯 Sections complètes :
+  - Hero avec présentation
+  - À propos de Loïc Rémy Yao
+  - Statistiques
+  - 4 formations détaillées
+  - Call-to-Action
+  - Footer avec liens de contact
+
+## 🛠️ Technologies utilisées
+
+- **Next.js 15.5.6** - Framework React
+- **React 19** - Bibliothèque UI
+- **TypeScript** - Typage statique
+- **Tailwind CSS 4** - Framework CSS utilitaire
+- **Context API** - Gestion d'état pour le thème
+
+## 🚀 Installation
 
 ```bash
+# Cloner le projet
+git clone <url-du-repo>
+cd loicremitrading
+
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Structure du projet
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+loicremitrading/
+├── public/
+│   └── assets/          # Images (logos, photo Loïc Rémy)
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx   # Layout principal avec ThemeProvider
+│   │   ├── page.tsx     # Page d'accueil
+│   │   └── globals.css  # Styles globaux
+│   ├── components/
+│   │   ├── Navbar.tsx   # Navigation avec toggle thème
+│   │   ├── Hero.tsx     # Section héro
+│   │   ├── About.tsx    # À propos
+│   │   ├── Stats.tsx    # Statistiques
+│   │   ├── Formations.tsx # Cartes des formations
+│   │   ├── CTA.tsx      # Call-to-action
+│   │   ├── Footer.tsx   # Pied de page
+│   │   └── ThemeToggle.tsx # Bouton toggle thème
+│   └── contexts/
+│       └── ThemeContext.tsx # Context pour le thème
+└── package.json
+```
 
-## Learn More
+## 🎨 Formations disponibles
 
-To learn more about Next.js, take a look at the following resources:
+1. **Formation Vidéo Préenregistrée** - 99€
+   - Pour débutants
+   - Accès illimité aux vidéos
+   - Communauté LRT Académie
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Formation Vidéo + Coaching** - 199€
+   - Coaching personnalisé
+   - Zooms après chaque module
+   - Suivi individuel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Formation Complète Pro** - 299€ / 359€
+   - Du débutant à l'expert
+   - One-to-one en live
+   - 3 mois groupe premium
 
-## Deploy on Vercel
+4. **Coaching Privé SMC** - 699€
+   - Pour traders avancés
+   - Mentorat exclusif
+   - Programme intensif
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Déploiement
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Vercel (Recommandé)
+
+```bash
+npm run build
+vercel deploy
+```
+
+### Autres plateformes
+
+```bash
+npm run build
+npm start
+```
+
+## 👨‍💼 À propos
+
+**Loïc Rémy Yao** (Yao Cyrille Romaric), CEO de LOÏC RÉMY TRADING, est un trader expérimenté avec 5 ans d'expérience. Il a formé plus de 1000 traders avec une approche basée sur la simplicité et la maîtrise des fondamentaux.
+
+## 📞 Contact
+
+- Email: contact@loicremytrading.com
+- Horaires: 9:00 – 20:00 GMT
+- WhatsApp: Disponible sur le site
+
+## 📄 Licence
+
+© 2025 Loïc Rémy Trading. Tous droits réservés.
+
+---
+
+Développé avec ❤️ pour la communauté des traders
