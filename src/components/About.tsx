@@ -6,12 +6,12 @@ export default function About() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Loïc Rémy Yao : Expert en Trading
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-red-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-[#005CD9] mx-auto"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fadeInLeft">
-            <div className="bg-gradient-to-br from-blue-50 to-white dark:from-gray-800 dark:to-gray-800 p-8 rounded-2xl shadow-lg card-hover">
+            <div className="bg-blue-50 dark:bg-gray-800 p-8 rounded-2xl shadow-lg card-hover">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                 À propos
               </h3>
@@ -19,7 +19,7 @@ export default function About() {
                 <span className="font-semibold">Yao Cyrille Romaric</span>, plus connu sous le nom de <span className="font-semibold text-blue-600 dark:text-blue-400">Loïc Rémy Yao</span>, CEO de <span className="font-semibold">LOÏC RÉMY TRADING</span>, est un trader expérimenté et entrepreneur passionné qui mise sur la simplicité pour réussir dans le monde complexe des marchés financiers.
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
-                Avec <span className="font-semibold">5 ans d'expérience</span>, il a développé une approche pragmatique et efficace, basée sur la compréhension des fondamentaux et la réduction des risques.
+                Avec <span className="font-semibold">5 ans d&apos;expérience</span>, il a développé une approche pragmatique et efficace, basée sur la compréhension des fondamentaux et la réduction des risques.
               </p>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function About() {
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 card-hover animate-delay-200">
+            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 card-hover animate-delay-200">
               <h4 className="font-bold text-xl mb-3 text-gray-900 dark:text-white flex items-center">
                 <svg className="w-6 h-6 mr-2 text-red-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
@@ -68,7 +68,7 @@ export default function About() {
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-red-600 to-red-700 text-white p-6 rounded-xl shadow-lg card-hover animate-delay-300">
+            <div className="bg-[#F41213] text-white p-6 rounded-xl shadow-lg card-hover animate-delay-300">
               <h4 className="font-bold text-xl mb-3">LOÏC RÉMY TRADING</h4>
               <ul className="space-y-2">
                 <li className="flex items-start">
@@ -77,7 +77,7 @@ export default function About() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-200 mr-2">◆</span>
-                  Des stratégies élaborées à partir d'analyses poussées et d'expérience terrain
+                  Des stratégies élaborées à partir d&apos;analyses poussées et d&apos;expérience terrain
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-200 mr-2">◆</span>

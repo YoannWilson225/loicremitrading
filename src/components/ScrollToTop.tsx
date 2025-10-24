@@ -32,7 +32,7 @@ export default function ScrollToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-8 right-8 z-50 bg-gradient-to-r from-[#005CD9] to-[#0047a3] hover:from-[#0047a3] hover:to-[#003580] text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 animate-fadeInUp"
+      className="fixed bottom-8 right-8 z-50 bg-[#005CD9] hover:bg-[#0047a3] text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 animate-fadeInUp"
       aria-label="Retour en haut"
     >
       <svg 

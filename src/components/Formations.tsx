@@ -14,8 +14,6 @@ export default function Formations() {
         "Intégration à la communauté privée LRT Académie",
         "Interactions entre membres de la LRT Student Work"
       ],
-      color: "from-gray-900 to-gray-800 dark:from-gray-800 dark:to-gray-700",
-      borderColor: "border-gray-300 dark:border-gray-600",
       buttonColor: "bg-gray-900 hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600",
       popular: false
     },
@@ -33,9 +31,7 @@ export default function Formations() {
         "Intégration à la communauté privée LRT Académie",
         "Interactions entre membres de la LRT Student Work"
       ],
-      color: "from-[#005CD9] to-[#0047a3]",
-      borderColor: "border-[#005CD9]",
-      buttonColor: "bg-gradient-to-r from-[#005CD9] to-[#0047a3] hover:from-[#0047a3] hover:to-[#003580]",
+      buttonColor: "bg-[#005CD9] hover:bg-[#0047a3]",
       popular: true
     },
     {
@@ -56,9 +52,7 @@ export default function Formations() {
         "Accès aux analyses et aux prises de position",
         "3 mois dans le groupe premium"
       ],
-      color: "from-indigo-600 to-purple-600",
-      borderColor: "border-indigo-600",
-      buttonColor: "bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700",
+      buttonColor: "bg-indigo-600 hover:bg-indigo-700",
       popular: false,
       note: "Ce programme est conçu pour ceux qui préfèrent évoluer à leur rythme avec un accompagnement très structuré et strict"
     },
@@ -76,8 +70,6 @@ export default function Formations() {
         "Accès illimité à des cours préenregistrés",
         "3 mois dans le groupe premium"
       ],
-      color: "from-gray-200 to-gray-100 dark:from-gray-300 dark:to-gray-200",
-      borderColor: "border-gray-400",
       buttonColor: "bg-gray-900 hover:bg-gray-800",
       textColor: "text-gray-900",
       popular: false,
@@ -104,7 +96,7 @@ export default function Formations() {
         {/* Header */}
         <div className="text-center mb-16 animate-fadeInDown">
           <div className="inline-block mb-4">
-            <span className="bg-gradient-to-r from-[#005CD9] to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
+            <span className="bg-[#005CD9] text-white px-6 py-2 rounded-full text-sm font-semibold">
               NOS OFFRES DE FORMATION
             </span>
           </div>
@@ -114,7 +106,7 @@ export default function Formations() {
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Choisissez la formation qui correspond à votre niveau et vos objectifs. Chaque programme est conçu pour vous apporter les compétences nécessaires pour réussir.
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#005CD9] to-purple-600 mx-auto mt-6"></div>
+          <div className="w-24 h-1 bg-[#005CD9] mx-auto mt-6"></div>
         </div>
 
         {/* Pricing Cards */}
@@ -130,7 +122,7 @@ export default function Formations() {
             >
               {/* Popular Badge */}
               {formation.popular && (
-                <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-[#005CD9] to-indigo-600 text-white text-center py-2 text-xs font-bold">
+                <div className="absolute top-0 left-0 right-0 bg-[#005CD9] text-white text-center py-2 text-xs font-bold">
                   ⭐ {formation.badge}
                 </div>
               )}
@@ -178,7 +170,7 @@ export default function Formations() {
                   onClick={() => openTelegram(formation.title, formation.price)}
                   className={`w-full ${formation.buttonColor} text-white py-3 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-md hover:shadow-lg mb-6`}
                 >
-                  S'inscrire maintenant
+                  S&apos;inscrire maintenant
                 </button>
 
                 {/* Description */}
@@ -230,8 +222,6 @@ export default function Formations() {
                 )}
               </div>
 
-              {/* Hover Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transform -skew-x-12 translate-x-[-200%] group-hover:translate-x-[200%] transition-all duration-1000 pointer-events-none"></div>
             </div>
           ))}
         </div>

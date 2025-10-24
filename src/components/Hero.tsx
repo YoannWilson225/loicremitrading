@@ -8,14 +8,14 @@ export default function Hero() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
 
-  const texts = [
-    'cercle des élites',
-    'traders qui réussissent',
-    '1% des meilleurs',
-    'élite du trading'
-  ];
-
   useEffect(() => {
+    const texts = [
+      'cercle des élites',
+      'traders qui réussissent',
+      '1% des meilleurs',
+      'élite du trading'
+    ];
+
     const timeout = setTimeout(() => {
       const current = texts[textIndex];
       
@@ -34,12 +34,12 @@ export default function Hero() {
     }, isDeleting ? 50 : 100);
 
     return () => clearTimeout(timeout);
-  }, [currentText, isDeleting, textIndex, texts]);
+  }, [currentText, isDeleting, textIndex]);
 
   return (
-    <section id="home" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Background avec couleur qui correspond au fond de l'image */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#E8F4FF] via-[#F5F5F5] to-[#FFE8E8] dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"></div>
+    <section id="home" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-[#A49C91]/20 dark:bg-gray-900">
+      {/* Background avec la nouvelle couleur */}
+      <div className="absolute inset-0 bg-[#A49C91]/15 dark:bg-[#A49C91]/5"></div>
       
       {/* Effet de grille subtile */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,92,217,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,92,217,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem] dark:bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)]"></div>
@@ -48,25 +48,20 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fadeInLeft">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              <span className="text-gray-900 dark:text-white">Faites partie des </span>
+              <span className="text-gray-900 dark:text-white">Rejoignez les </span>
               <span className="text-[#005CD9] dark:text-blue-400">1%</span>
               <br />
-              <span className="text-gray-900 dark:text-white">rejoignez le </span>
-              <span className="bg-gradient-to-r from-[#005CD9] to-[#F41213] bg-clip-text text-transparent">
-                {currentText}
-                <span className="animate-pulse">|</span>
-              </span>
+              <span className="text-gray-900 dark:text-white">qui réussissent en trading</span>
             </h1>
             
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-              Maîtrisez le trading avec simplicité et professionnalisme. 
-              <span className="font-semibold text-[#005CD9] dark:text-blue-400"> Plus de 1000 étudiants formés.</span>
+              Apprenez le trading avec une méthode simple et professionnelle. Plus de 1000 traders formés avec succès.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#formations" 
-                className="bg-gradient-to-r from-[#005CD9] to-[#0047a3] hover:from-[#0047a3] hover:to-[#003580] text-white px-8 py-4 rounded-full text-center font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="bg-[#005CD9] hover:bg-[#0047a3] text-white px-8 py-4 rounded-full text-center font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Découvrir nos formations
               </a>
@@ -79,13 +74,13 @@ export default function Hero() {
             </div>
 
             <div className="flex gap-8 pt-4">
-              <div className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl card-hover animate-fadeInUp animate-delay-200">
+              <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md card-hover animate-fadeInUp animate-delay-200">
                 <div className="text-4xl font-bold text-[#005CD9] dark:text-blue-400">+1000</div>
                 <div className="text-gray-600 dark:text-gray-400">Étudiants formés</div>
               </div>
-              <div className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl card-hover animate-fadeInUp animate-delay-300">
+              <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md card-hover animate-fadeInUp animate-delay-300">
                 <div className="text-4xl font-bold text-[#005CD9] dark:text-blue-400">5+</div>
-                <div className="text-gray-600 dark:text-gray-400">Années d'expérience</div>
+                <div className="text-gray-600 dark:text-gray-400">Années d&apos;expérience</div>
               </div>
             </div>
           </div>
@@ -102,7 +97,7 @@ export default function Hero() {
             </div>
             {/* Effets de halo autour de l'image */}
             <div className="absolute -top-4 -right-4 w-72 h-72 bg-[#005CD9]/20 dark:bg-[#005CD9]/30 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-[#F41213]/20 dark:bg-[#F41213]/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-[#A49C91]/30 dark:bg-[#A49C91]/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
           </div>
         </div>
       </div>

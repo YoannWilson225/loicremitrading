@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Stats from '@/components/Stats';
 import Formations from '@/components/Formations';
+import Testimonials from '@/components/Testimonials';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <Stats />
       <Formations />
+      <Testimonials />
       <CTA />
       <Footer />
       <ScrollToTop />
