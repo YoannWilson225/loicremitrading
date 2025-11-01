@@ -50,7 +50,7 @@ export default function Formations() {
         "Accès illimité à la communauté LRT Student Work",
         "Accès illimité à des cours préenregistrés",
         "Accès aux analyses et aux prises de position",
-        "3 mois dans le groupe premium"
+        "1 mois dans le groupe premium"
       ],
       buttonColor: "bg-indigo-600 hover:bg-indigo-700",
       popular: false,
@@ -77,12 +77,19 @@ export default function Formations() {
     }
   ];
 
-  const openTelegram = (planTitle: string, price: string) => {
-    const message = encodeURIComponent(
-      `Bonjour ! Je suis intéressé(e) par la formation "${planTitle}" à ${price}. Pourriez-vous me donner plus d'informations ?`
-    );
-    window.open(`https://t.me/loicremy06?text=${message}`, '_blank');
-  };
+  // const openTelegram = (planTitle: string, price: string) => {
+  //   const message = encodeURIComponent(
+  //     `Bonjour ! Je suis intéressé(e) par la formation "${planTitle}" à ${price}. Pourriez-vous me donner plus d'informations ?`
+  //   );
+  //   window.open(`https://t.me/loicremy06?text=${message}`, '_blank');
+  // };
+  const openWhatsApp = (planTitle: string, price: string) => {
+  const message = encodeURIComponent(
+    `Bonjour ! Je suis intéressé(e) par la formation "${planTitle}" à ${price}. Pourriez-vous me donner plus d'informations ?`
+  );
+  window.open(`https://wa.me/2250160251477?text=${message}`, '_blank');
+};
+
 
   return (
     <section id="formations" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
@@ -106,7 +113,7 @@ export default function Formations() {
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Choisissez la formation qui correspond à votre niveau et vos objectifs. Chaque programme est conçu pour vous apporter les compétences nécessaires pour réussir.
           </p>
-          <div className="w-24 h-1 bg-[#005CD9] mx-auto mt-6"></div>
+          <div className="w-24 h-1 bg-[#282a2c] mx-auto mt-6"></div>
         </div>
 
         {/* Pricing Cards */}
@@ -167,7 +174,7 @@ export default function Formations() {
 
                 {/* CTA Button */}
                 <button
-                  onClick={() => openTelegram(formation.title, formation.price)}
+                  onClick={() => openWhatsApp(formation.title, formation.price)}
                   className={`w-full ${formation.buttonColor} text-white py-3 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-md hover:shadow-lg mb-6`}
                 >
                   S&apos;inscrire maintenant
@@ -247,7 +254,7 @@ export default function Formations() {
             </div>
             <p className="text-gray-600 dark:text-gray-300 text-lg">
               Toutes nos formations incluent un suivi personnalisé et une communauté active.
-              Rejoignez plus de 1000 traders qui ont transformé leur vie.
+              Rejoignez plus de 500 traders qui ont transformé leur vie.
             </p>
           </div>
         </div>
